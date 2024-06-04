@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark-mode');
     });
 
-    // Initialize the theme based on current mode
+   
     if (document.body.classList.contains('dark-mode')) {
         document.body.classList.add('dark-mode');
     } else {
@@ -50,8 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         }
     });
-
-    // Initialize the theme based on current mode
+    
     if (document.body.classList.contains('dark-mode')) {
         document.body.classList.add('dark-mode');
     } else {

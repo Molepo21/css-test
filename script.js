@@ -7,32 +7,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('myModal');
     const closeModal = document.querySelector('.modal .close');
     const cancelBtn = document.querySelector('.cancelBtn');
-
+  
     closeBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('closed');
+      sidebar.classList.toggle('closed');
     });
-
+  
     lightModeBtn.addEventListener('click', () => {
-        document.body.classList.remove('dark-mode');
-        document.body.classList.add('light-mode');
+      sidebar.classList.remove('dark-theme');
+      sidebar.classList.add('light-theme');
     });
-
+  
     darkModeBtn.addEventListener('click', () => {
-        document.body.classList.remove('light-mode');
-        document.body.classList.add('dark-mode');
+      sidebar.classList.remove('light-theme');
+      sidebar.classList.add('dark-theme');
     });
 
-   
-    if (document.body.classList.contains('dark-mode')) {
-        document.body.classList.add('dark-mode');
-    } else {
-        document.body.classList.add('light-mode');
-    }
 
 
-
-
-    
+     
     modalBtn.addEventListener('click', () => {
         modal.style.display = 'block';
     });
@@ -56,4 +48,5 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         document.body.classList.add('light-mode');
     }
-});
+  });
+  
